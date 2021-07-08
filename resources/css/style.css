@@ -4,33 +4,36 @@
   box-sizing: border-box;
 }
 
-html,
+/* html, */
 body {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 20px;
   font-weight: 300;
-  text-rendering: optimizeLegibility;
+  /* text-rendering: optimizeLegibility; */
   /* overflow-x: hidden; */
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
+  line-height: 1.7;
 }
 
 h1 {
   text-align: center;
+  padding: 25px 0;
   /* vertical-align: middle; */
 }
 
 h1 a {
   text-decoration: none;
   color: #000;
-  font-size: 60%;
+  /* font-size: 40px; */
+  font-size: 80%;
   font-weight: 400;
   vertical-align: middle;
 }
 
 h2 {
-  font-size: 200%;
+  font-size: 220%;
   font-weight: 300;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 h3 {
@@ -41,7 +44,6 @@ h3 {
 p {
   padding: 20px 0;
   word-spacing: 2px;
-  line-height: 160%;
 }
 
 section {
@@ -133,7 +135,7 @@ header {
 
 .imgbox {
   flex: 1;
-  text-align: right;
+  text-align: left;
 }
 
 .imgbox img {
@@ -187,12 +189,13 @@ WHY AIRI
 PHOTOS
 =====================================*/
 .section__photos {
+  display: flow-root;
+  /* display: block; */
   padding: 0;
   margin: 0;
 }
 
 .photos__row {
-  /* display: flow-root; */
   list-style: none;
   width: 100%;
 }
@@ -249,4 +252,20 @@ PHOTOS
   -ms-transform: scale(1.03);
   transform: scale(1.03);
   /* transition: transform 0.5s, opacity 0.5s; */
+}
+
+.section__instabutton {
+  padding: 90px;
+  text-align: center;
+  /* margin: 30px 0; */
+}
+
+.section__instabutton a {
+  display: inline-block;
+  background-color: #f1d069;
+  text-decoration: none;
+  color: #fff;
+  font-size: 80%;
+  font-weight: 700;
+  padding: 20px 60px;
 }
