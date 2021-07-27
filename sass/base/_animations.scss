@@ -1,0 +1,27 @@
+@keyframes itemAppear {
+  0% {
+    @include centerItem;
+    opacity: 0;
+    transform: scale(0.5) translate(-100%, -100%);
+  }
+
+  100% {
+    @include centerItem;
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+@keyframes shadowAppear {
+  0% {
+    box-shadow: 0 1rem 2rem rgba($color-black, 0);
+  }
+
+  70% {
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 1rem 2rem rgba($color-black, 1);
+  }
+}

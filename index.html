@@ -5,154 +5,232 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Airi — маникюр и педикюр в Академгородке, Новосибирск</title>
-    <!-- <link rel="stylesheet" href="/vendors/css/grid.css" type="text/css" /> -->
-    <!-- <link rel="stylesheet" href="/vendors/css/normalize.css" type="text/css" /> -->
-    <link rel="stylesheet" href="/resources/css/style.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="/css/style.css" type="text/css" /> -->
+    <link rel="stylesheet" href="/css/phosphor.css" type="text/css" />
+    <link rel="stylesheet" href="/css/phosphor-codes.css" type="text/css" />
+    <link rel="stylesheet" href="/css/animation.css" type="text/css" />
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!-- HEADER -->
-    <header>
-      <section>
-        <div class="row main-header">
-          <h1>
-            <a href="https://airi-nails.ru"
-              >Airi — маникюр и педикюр в Академгородке</a
-            >
-          </h1>
+    <header class="header u-side-paddings">
+      <div class="header__title">
+        <h1 class="heading-primary">
+          <a href="https://airi-nails.ru" class="header__link header__link--1"
+            >Airi — маникюр и педикюр в Академгородке</a
+          >
+        </h1>
+      </div>
+
+      <nav class="header__navbar">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link header__link--2">Мастера</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link header__link--2">Цены</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link header__link--2">Отзывы</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link header__link--2">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__descblock">
+        <div class="header__description">
+          <h2 class="heading-secondary">Добро пожаловать в Airi!</h2>
+          <div class="header__line">&nbsp;</div>
+          <p class="paragraph">
+            Привет! Рады, что ты здесь.<br />Airi — это уютная студия маникюра и
+            педикюра в Академгородке. У нас 3 классных мастера, которые работают
+            в современных техниках, вкусный кофе и огромная коллекция твоих
+            любимых сериалов. Работаем с 10 до 20 часов каждый день :)
+          </p>
         </div>
-        <nav class="row navbar">
-          <ul>
-            <li><a href="#">Мастера</a></figure></li>
-            <li><a href="#">Цены</a></figure></li>
-            <li><a href="#">Отзывы</a></figure></li>
-            <li><a href="#">Контакты</a></figure></li>
-          </ul>
-        </nav>
-        <div class="row">
-          <div class="descblock">
-            <div class="desc">
-              <h2>Добро пожаловать в Airi!</h2>
-              <div class="desc--line">&nbsp;</div>
-              <p>
-                Привет! Рады, что ты здесь.<br />Airi — это уютная студия
-                маникюра и педикюра в Академгородке. У нас 3 классных мастера,
-                которые работают в современных техниках, вкусный кофе и огромная
-                коллекция твоих любимых сериалов. Работаем с 10 до 20 часов
-                каждый день :)
-              </p>
-            </div>
-            <div class="imgbox">
-              <img
-                src="/resources/img/dsc_0175_1_1_1.png"
-                alt="Airi Studio"
-                class="descimg"
-              />
-            </div>
-          </div>
+
+        <div class="header__imgbox">
+          <img
+            src="/img/main-photo.jpg"
+            alt="Airi Studio"
+            class="header__img"
+          />
         </div>
-      </section>
+      </div>
     </header>
 
-    <!-- WHY AIRI? -->
+    <main>
+      <!-- WHY AIRI? -->
 
-    <section class="section__why">
-      <div class="row">
-        <h2>Почему Airi?</h2>
-      </div>
-      <div class="row">
-        <div class="why__box">
-          <div class="why__box--tag1 why__box__card">
-            <img src="/resources/img/quality.svg" alt="Quality" />
-            <h3>Высокое качество</h3>
-            <p>
+      <section class="section-why u-side-paddings u-padding-top-medium">
+        <h2 class="heading-secondary">Почему Airi?</h2>
+        <div class="feature-box">
+          <div class="feature-box__card feature-box__card--1">
+            <img
+              src="/img/quality.svg"
+              alt="Quality"
+              class="feature-box__img"
+            />
+            <h3 class="heading-tertiary">Высокое качество</h3>
+            <p class="paragraph--small">
               Аккуратный маникюр и хорошее покрытие, которое держится до 5
               недель
             </p>
           </div>
-          <div class="why__box--tag2 why__box__card">
+          <div class="feature-box__card feature-box__card--2">
             <img
-              src="/resources/img/Tilda_Icons_47dlvr_speed.svg"
+              src="/img/Tilda_Icons_47dlvr_speed.svg"
               alt="Speed"
+              class="feature-box__img"
             />
-            <h3>Маникюр за час</h3>
-            <p>
+            <h3 class="heading-tertiary">Маникюр за час</h3>
+            <p class="paragraph--small">
               Специальное предложение для тех, кто ценит своё время: наши
               мастера умеют делать быстрый и аккуратный маникюр с однотонным
               покрытием всего за 1 час
             </p>
           </div>
-          <div class="why__box--tag3 why__box__card">
+          <div class="feature-box__card feature-box__card--3">
             <img
-              src="/resources/img/Tilda_Icons_35_Valentine_lovestory.svg"
+              src="/img/Tilda_Icons_35_Valentine_lovestory.svg"
               alt="Series"
+              class="feature-box__img"
             />
-            <h3>Твои любимые сериалы</h3>
-            <p>
+            <h3 class="heading-tertiary">Твои любимые сериалы</h3>
+            <p class="paragraph--small">
               Коллекция сериалов и фильмов, быстрый Wi-Fi, а еще чай и кофе.
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- PHOTOS -->
+      <!-- PHOTOS -->
 
-    <section class="section__photos">
-      <ul class="photos__row">
-        <li>
-          <figure class="photos__row__card">
-            <img src="/resources/img/photo_2020-09-02_13-.jpg" />
-          </figure>
-        </li>
-        <li>
-          <figure class="photos__row__card">
-            <img src="/resources/img/photo_2020-09-02_13-1.jpg" />
-          </figure>
-        </li>
-        <li>
-          <figure class="photos__row__card">
-            <img src="/resources/img/photo_2020-09-02_13-2.jpg" />
-          </figure>
-        </li>
-        <li>
-          <figure class="photos__row__card">
-            <img src="/resources/img/photo_2020-09-02_13-3.jpg" />
-          </figure>
-        </li>
-      </ul>
-      <ul class="photos__row">
-        <li>
-          <figure class="photos__row__card">
-            <img src="/resources/img/photo_2020-09-02_13-4.jpg" />
-          </figure>
-        </li>
-        <li>
-          <figure class="photos__row__card">
-            <img src="/resources/img/photo_2020-09-02_13-5.jpg" />
-          </figure>
-        </li>
-        <li>
-          <figure class="photos__row__card">
-            <img src="/resources/img/photo_2020-09-02_13-6.jpg" />
-          </figure>
-        </li>
-        <li>
-          <figure class="photos__row__card">
-            <img src="/resources/img/photo_2020-09-02_13-7.jpg" />
-          </figure>
-        </li>
-      </ul>
-    </section>
+      <section class="section-photos">
+        <ul class="photos__list">
+          <li class="photos__item">
+            <figure class="photos__card">
+              <img src="/img/photo_2020-09-02_13-.jpg" class="photos__img" />
+            </figure>
+          </li>
+          <li class="photos__item">
+            <figure class="photos__card">
+              <img src="/img/photo_2020-09-02_13-1.jpg" class="photos__img" />
+            </figure>
+          </li>
+          <li class="photos__item">
+            <figure class="photos__card">
+              <img src="/img/photo_2020-09-02_13-2.jpg" class="photos__img" />
+            </figure>
+          </li>
+          <li class="photos__item">
+            <figure class="photos__card">
+              <img src="/img/photo_2020-09-02_13-3.jpg" class="photos__img" />
+            </figure>
+          </li>
+        </ul>
+        <ul class="photos__list">
+          <li class="photos__item">
+            <figure class="photos__card">
+              <img src="/img/photo_2020-09-02_13-4.jpg" class="photos__img" />
+            </figure>
+          </li>
+          <li class="photos__item">
+            <figure class="photos__card">
+              <img src="/img/photo_2020-09-02_13-5.jpg" class="photos__img" />
+            </figure>
+          </li>
+          <li class="photos__item">
+            <figure class="photos__card">
+              <img src="/img/photo_2020-09-02_13-6.jpg" class="photos__img" />
+            </figure>
+          </li>
+          <li class="photos__item">
+            <figure class="photos__card">
+              <img src="/img/photo_2020-09-02_13-7.jpg" class="photos__img" />
+            </figure>
+          </li>
+        </ul>
+      </section>
 
-    <section class="section__instabutton">
-      <div class="row">
-        <a href="https://www.instagram.com/airi_nogotki/" target="_blank">Больше фото в нашем Инстаграме</a>
-      </div>
-    </section>
-    
+      <!-- INSTABUTTON -->
+
+      <section class="section-instabutton">
+        <i class="ph-arrow-bend-down-right instabutton__icon"></i>
+        <a
+          href="https://www.instagram.com/airi_nogotki/"
+          target="_blank"
+          class="instabutton__link"
+          >Больше фото в нашем Instagram</a
+        >
+        <i class="ph-arrow-bend-down-left instabutton__icon"></i>
+      </section>
+
+      <!-- MASTERS -->
+
+      <section class="section-masters u-side-paddings">
+        <h2
+          class="
+            heading-secondary
+            u-text-center u-margin-bottom u-padding-top-big
+          "
+        >
+          Мастера студии
+        </h2>
+        <div class="masters">
+          <div class="masters__card masters__card--1">
+            <div class="masters__img-box">
+              <img src="/img/vika.jpg" alt="Вика" class="masters__img" />
+            </div>
+            <h3 class="heading-tertiary masters__heading">Вика</h3>
+            <p class="paragraph--small masters__text">
+              "Вчера была на педикюре у мастера Виктории... Мастер очень
+              вежливая и милая девушка, приятно было с ней работать) качеством
+              работы довольна - все сделано красиво и аккуратно :)"
+            </p>
+            <a href="#" target="_blank" class="masters__link u-text-center"
+              >Работы мастера</a
+            >
+          </div>
+          <div class="masters__card masters__card--2">
+            <div class="masters__img-box">
+              <img src="/img/bella.png" alt="Белла" class="masters__img" />
+            </div>
+            <h3 class="heading-tertiary masters__heading">Белла</h3>
+            <p class="paragraph--small masters__text">
+              "Здравствуйте :)<br />
+              Хочу еще раз поблагодарить вашего мастера Беллу! Я очень
+              довольна!<br />
+              Спасибо ей за мои идеальные ногти!<br />
+              🌸"
+            </p>
+            <a href="#" target="_blank" class="masters__link u-text-center"
+              >Работы мастера</a
+            >
+          </div>
+          <div class="masters__card masters__card--3">
+            <div class="masters__img-box">
+              <img src="/img/valya.jpg" alt="Валя" class="masters__img" />
+            </div>
+            <h3 class="heading-tertiary masters__heading">Валя</h3>
+            <p class="paragraph--small masters__text">
+              "Валя - делает очень аккуратно, без суеты, мои супер-короткие
+              ногти флориста привела в чувство) Маникюр носился долго, спасибо
+              ей и вашему салону!"
+            </p>
+            <a href="#" target="_blank" class="masters__link u-text-center"
+              >Работы мастера</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

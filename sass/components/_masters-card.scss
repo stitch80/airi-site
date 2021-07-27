@@ -1,0 +1,77 @@
+.masters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 8rem;
+
+  &__card {
+    margin: 0 1.5rem;
+    display: grid;
+    grid-template-rows: 65% 5% 25%;
+    // display: inline;
+    &--1 {
+      grid-column: 1;
+    }
+
+    &--2 {
+      grid-column: 2;
+    }
+
+    &--3 {
+      grid-column: 3;
+    }
+  }
+
+  &__img-box {
+    // display: block;
+    grid-row: 1;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1rem;
+    &::after {
+      display: block;
+      content: "";
+      padding-top: 100%;
+    }
+  }
+
+  &__img {
+    @include centerItem;
+    max-width: 120%;
+    max-height: 120%;
+  }
+
+  &__card--1 &__img-box &__img {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  &__card--2 &__img-box &__img {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  &__card--3 &__img-box &__img {
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+
+  &__heading {
+    grid-row: 2;
+  }
+
+  &__text {
+    grid-row: 3;
+
+    font-style: italic;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      grid-row: 4;
+      display: inline-block;
+      text-decoration: none;
+      color: $color-white;
+      background-color: $color-primary;
+      font-size: 80%;
+      font-weight: 700;
+      padding: 1rem 2rem;
+      width: 50%;
+    }
+  }
+}

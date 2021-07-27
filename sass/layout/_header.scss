@@ -1,0 +1,87 @@
+.header {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 15% 10% auto;
+
+  &__title {
+    border-bottom: 2px solid $color-primary;
+    grid-row: 1;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-black;
+    font-size: 80%;
+    font-weight: 400;
+    &--1 {
+      vertical-align: middle;
+    }
+
+    &--2 {
+      &:link,
+      &:visited {
+        border-bottom: 0.2rem solid transparent;
+        transition: border-bottom 0.2s;
+        padding: 0.2rem 0;
+      }
+
+      &:hover,
+      &:active {
+        border-bottom: 0.2rem solid $color-primary;
+        transition: border-bottom 0.2s;
+      }
+    }
+  }
+
+  &__navbar {
+    margin: 2.5rem auto;
+    grid-row: 2;
+  }
+
+  &__list {
+    list-style: none;
+    text-align: center;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0 1.5rem;
+  }
+
+  &__descblock {
+    grid-row: 3;
+    display: flex;
+    padding: 2.5rem 0;
+  }
+
+  &__description {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5rem;
+  }
+
+  &__line {
+    display: block;
+    height: 0.3rem;
+    width: 5rem;
+    background-color: $color-black;
+  }
+
+  &__imgbox {
+    flex: 1;
+
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1rem 2rem $color-black;
+    animation: shadowAppear 1.7s $animation-template backwards;
+  }
+
+  &__img {
+    @include centerItem;
+    width: 100%;
+    height: auto;
+    animation: itemAppear 1.7s $animation-template backwards;
+  }
+}

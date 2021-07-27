@@ -1,0 +1,37 @@
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  text-align: center;
+  padding: 2.5rem 0;
+  /* vertical-align: middle; */
+}
+
+.heading-secondary {
+  // font-size: 220%;
+  font-size: 4.4rem;
+  font-weight: 300;
+  // padding: 1rem 0;
+}
+
+.heading-tertiary {
+  // font-size: 145%;
+  font-size: 2.95rem;
+  font-weight: 400;
+}
+
+.paragraph {
+  padding: 2rem 0;
+  word-spacing: 0.2rem;
+
+  &--small {
+    padding: 1.5rem 0;
+
+    // font-size: 80%;
+    font-size: 1.6rem;
+  }
+}

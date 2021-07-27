@@ -1,0 +1,39 @@
+.photos {
+  &__list {
+    list-style: none;
+    width: 100%;
+  }
+
+  &__item {
+    display: block;
+    float: left;
+    width: 25%;
+  }
+
+  &__card {
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+
+    &::after {
+      display: block;
+      content: "";
+      padding-top: 100%;
+    }
+  }
+
+  &__img {
+    @include centerItem;
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 0.7;
+    max-width: 122%;
+    max-height: 122%;
+    transition: all 0.5s;
+
+    &:hover {
+      cursor: zoom-in;
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.03);
+    }
+  }
+}
