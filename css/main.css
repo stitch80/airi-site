@@ -178,10 +178,6 @@ body {
   background-color: #f1d069;
 }
 
-.prices__cross {
-  stroke: black;
-}
-
 .prices__acc-button {
   display: -ms-grid;
   display: grid;
@@ -475,6 +471,24 @@ body {
   font-weight: 700;
   padding: 1.7rem 2rem;
   width: 50%;
+}
+
+.ion-top-button {
+  cursor: pointer;
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  font-size: 6rem;
+  color: #f1d069;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  -webkit-transform: opacity(0);
+          transform: opacity(0);
 }
 
 .header {

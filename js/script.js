@@ -5,7 +5,37 @@ const accButtons = document.querySelectorAll(".prices__acc-button");
 const items = document.querySelectorAll(".prices__item");
 const boxes = document.querySelectorAll(".prices__hidden-box");
 const icons = document.querySelectorAll(".ph-plus");
+const topButton = document.querySelector(".ion-top-button");
+const header = document.querySelector("header");
 
+///////////////////////////////////////////
+// BUTTON TO TOP
+
+topButton.addEventListener("click", function (e) {
+  document.querySelector("header").scrollIntoView({ behavior: "smooth" });
+});
+
+const stickyButton = function (entries, observer) {
+  // entries.forEach(entry => {
+  //   console.log(entry);
+  //   nav.classList.toggle('sticky');
+  // });
+  const entry = entries[0];
+  if (!entry.isIntersecting) {
+    topButton.classList.remove("hidden");
+  } else {
+    topButton.classList.add("hidden");
+  }
+};
+
+const topButtonObserver = new IntersectionObserver(stickyButton, {
+  root: null,
+  threshold: 0,
+});
+topButtonObserver.observe(header);
+
+///////////////////////////////////////////
+// ACCORDION
 let curButton;
 
 accButtons.forEach((b) =>
@@ -29,6 +59,7 @@ accButtons.forEach((b) =>
   })
 );
 
+// SCROLL TO CURRENT PANEL OF ACCORDION
 boxes.forEach((b) =>
   b.addEventListener("transitionend", function (e) {
     const accBtn = e.target

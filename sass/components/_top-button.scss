@@ -1,0 +1,17 @@
+.ion-top-button {
+  cursor: pointer;
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  font-size: 6rem;
+  color: $color-primary;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+// ion-icon {
+//   font-size: 64px;
+// }
