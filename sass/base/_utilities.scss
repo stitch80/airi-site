@@ -1,6 +1,11 @@
 .u-side-paddings {
   padding-left: 13rem !important;
   padding-right: 13rem !important;
+
+  &--big {
+    padding-left: 35rem !important;
+    padding-right: 35rem !important;
+  }
 }
 
 .u-text-center {

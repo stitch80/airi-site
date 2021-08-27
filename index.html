@@ -17,9 +17,15 @@
     <script
       defer
       type="text/javascript"
+      src="https://unpkg.com/web-vitals/dist/polyfill.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
       src="https://w259629.yclients.com/widgetJS"
       charset="UTF-8"
     ></script>
+    <script defer src="./js/script.js"></script>
   </head>
 
   <body>
@@ -235,15 +241,155 @@
               >Работы мастера</a
             >
           </div>
+
+          <div class="masters__card masters__card--4">
+            <div class="masters__img-box">
+              <img src="/img/liza.JPG" alt="Лиза" class="masters__img" />
+            </div>
+            <h3 class="heading-tertiary masters__heading">Лиза</h3>
+            <p class="paragraph--small masters__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              animi accusantium dolorem quae facilis itaque natus ipsa quidem!
+              Nulla quis iste vero sunt, corporis modi eveniet enim voluptates
+              voluptas facilis!
+            </p>
+            <a href="#" target="_blank" class="masters__link u-text-center"
+              >Работы мастера</a
+            >
+          </div>
+
+          <div class="masters__card masters__card--5">
+            <div class="masters__img-box">
+              <img src="/img/nastya.jpg" alt="Настя" class="masters__img" />
+            </div>
+            <h3 class="heading-tertiary masters__heading">Настя</h3>
+            <p class="paragraph--small masters__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, est
+              aut! Perspiciatis ullam molestias voluptatum saepe asperiores
+              praesentium expedita fuga aperiam deserunt tenetur provident,
+              molestiae totam possimus. Hic, nisi doloribus?
+            </p>
+            <a href="#" target="_blank" class="masters__link u-text-center"
+              >Работы мастера</a
+            >
+          </div>
         </div>
       </section>
 
       <!-- PRICES -->
 
-      <section class="section-prices">
+      <section class="section-prices u-side-paddings--big u-padding-top-medium">
         <h2 class="prices__heading heading-secondary">Цены</h2>
         <p class="prices__hint paragraph">Нажмите на +, чтобы развернуть</p>
-        <div class="prices__accordion"></div>
+        <div class="prices__accordion u-padding-top-big">
+          <div class="prices__item open">
+            <div class="prices__acc-button">
+              <p class="prices__service">Маникюр</p>
+              <div class="prices__circle">
+                <i class="ph-plus"></i>
+              </div>
+            </div>
+            <div class="prices__hidden-box">
+              <div class="prices__image-box">
+                <img src="./img/photo_2020-09-02_13-.jpg" alt="Photo" />
+              </div>
+              <p class="prices__text">
+                <span>Мастер Валя</span><br />Маникюр + покрытие гель-лак
+                <span>1600</span><br />Маникюр <span>800</span><br />Снятие +
+                маникюр <span>900</span><br />Маникюр + покрытие гель-лак +
+                парафинотерапия <span>1900</span><br />
+                Маникюр + парафинотерапия <span>1100</span><br />Парафинотерапия
+                <span>400</span><br />
+                <br />
+                <span>Мастера Вика и Белла</span><br />Маникюр + покрытие
+                гель-лак <span>1400</span><br />Маникюр <span>650</span
+                ><br />Снятие + маникюр <span>750</span><br />Маникюр + покрытие
+                гель-лак + парафинотерапия <span>1700</span><br />
+                Маникюр + парафинотерапия <span>950</span><br />Парафинотерапия
+                <span>400</span><br />
+                <br />
+                <span>Дополнительно</span><br />
+                Укрепление гелем, акригелем <span>бесплатно</span><br />Снятие
+                гель-лака <span>200</span> (перед маникюром с покрытием -
+                <span>бесплатно</span>)<br />Подпиливание ногтей <span>150</span
+                ><br />Снятие наращенных ногтей <span>300</span><br />Ремонт
+                ногтя <span>50-100</span><br />
+                Донаращивание ногтя <span>100</span><br />Наращивание ногтя
+                <span>150</span><br />Чай, кофе, любимые сериалы
+                <span>бесплатно</span>
+              </p>
+            </div>
+          </div>
+          <div class="prices__item">
+            <div class="prices__acc-button">
+              <p class="prices__service">Дизайн</p>
+              <div class="prices__circle">
+                <i class="ph-plus"></i>
+              </div>
+            </div>
+
+            <div class="prices__hidden-box">
+              <div class="prices__image-box">
+                <img src="./img/photo_2020-09-02_13-2.jpg" alt="Photo" />
+              </div>
+              <p class="prices__text">
+                Френч/лунки/обратный френч <span>300</span><br />
+                Фольга/слайдер/свитерок <span>100</span>/ноготок<br />
+                Камифубуки/сухоцветы/ленты <span>100</span>/ноготок<br />
+                Растяжка <span>50</span>/ноготок<br />
+                Слюда на весь ноготок <span>бесплатно</span><br />
+                Градиент кистью <span>100</span>/ноготок, <span>500</span>/10
+                ноготков<br />
+                Стемпинг <span>100</span>/ноготок, <span>500</span>/10
+                ноготков<br />
+                Стразы <span>150</span> композиция на 1 ноготок<br />
+                Втирка 2 ноготка/<span>100</span>, 10 ноготков/<span>400</span
+                ><br />
+                Рисунок от руки <span>100-300</span>
+              </p>
+            </div>
+          </div>
+          <div class="prices__item">
+            <div class="prices__acc-button">
+              <p class="prices__service">Препаратный педикюр Golden Trace</p>
+              <div class="prices__circle">
+                <i class="ph-plus"></i>
+              </div>
+            </div>
+
+            <div class="prices__hidden-box">
+              <div class="prices__image-box">
+                <img src="./img/photo_2020-09-02_13-1.jpg" alt="Photo" />
+              </div>
+              <p class="prices__text">
+                <span>Мастер Валя</span><br />
+                Педикюр + покрытие гель-лак <span>2300</span><br />
+                Педикюр пальчики + покрытие гель-лак <span>1800</span><br />
+                Педикюр без покрытия <span>1800</span><br />
+                Снятие + педикюр <span>1900</span><br />
+                Снятие + педикюр пальчики <span>1600</span><br />
+                <br />
+                <span>Мастера Вика и Белла</span><br />
+                Педикюр + покрытие гель-лак <span>2000</span><br />
+                Педикюр пальчики + покрытие гель-лак <span>1500</span><br />
+                Педикюр без покрытия <span>1500</span><br />
+                Снятие + педикюр <span>1600</span><br />
+                Снятие + педикюр пальчики <span>1300</span><br />
+                <br />
+                <span>Дополнительно</span><br />
+                Снятие <span>200</span><br />
+                Подпиливание ногтей <span>150</span><br />
+                Снятие перед педикюром с покрытием <span>бесплатно</span><br />
+                Ремонт ногтя <span>100</span><br />
+                Донаращивание ногтя <span>200</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-quotes">
+        <h1>jkhedluekgeduyg</h1>
       </section>
     </main>
   </body>
