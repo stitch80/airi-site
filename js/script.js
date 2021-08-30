@@ -8,6 +8,15 @@ const icons = document.querySelectorAll(".ph-plus");
 const topButton = document.querySelector(".ion-top-button");
 const header = document.querySelector("header");
 
+const masters = document.querySelector(".section-masters");
+const prices = document.querySelector(".section-prices");
+const quotes = document.querySelector(".section-quotes");
+const contacts = document.querySelector(".section-contacts");
+const linkMasters = document.querySelector(".footer__link--masters");
+const linkPrices = document.querySelector(".footer__link--prices");
+const linkQuotes = document.querySelector(".footer__link--quotes");
+const linkContacts = document.querySelector(".footer__link--contacts");
+
 ///////////////////////////////////////////
 // BUTTON TO TOP
 
@@ -64,3 +73,17 @@ boxes.forEach((b) =>
     if (accBtn === curButton) accBtn.scrollIntoView({ behavior: "smooth" });
   })
 );
+
+// FOOTER NAV LINKS
+linkMasters.addEventListener("click", function () {
+  masters.scrollIntoView({ behavior: "smooth" });
+});
+linkPrices.addEventListener("click", function () {
+  prices.scrollIntoView({ behavior: "smooth" });
+});
+linkQuotes.addEventListener("click", function () {
+  quotes.scrollIntoView({ behavior: "smooth" });
+});
+linkContacts.addEventListener("click", function () {
+  contacts.scrollIntoView({ behavior: "smooth" });
+});

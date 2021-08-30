@@ -2,6 +2,7 @@
   &__accordion {
     display: flex;
     flex-direction: column;
+    padding-bottom: 12rem;
   }
 
   &__item {
@@ -75,9 +76,9 @@
       font-weight: 700;
     }
   }
-}
 
-.ph-plus {
-  font-size: 3.3rem;
-  transition: transform 0.5s ease-out;
+  &__icon {
+    font-size: 3.3rem;
+    transition: transform 0.5s ease-out;
+  }
 }

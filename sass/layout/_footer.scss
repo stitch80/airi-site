@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  &__nav {
+    display: flex;
+    justify-items: center;
+  }
+
+  &__link {
+    // text-decoration: none;
+    text-align: center;
+    padding: 4rem 2rem 2rem 2rem;
+    color: $color-black;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &__oferta {
+    display: flex;
+    justify-items: center;
+  }
+
+  &__oferta-text {
+    text-decoration: none;
+    text-align: center;
+    color: $color-grey-dark;
+    padding: 2rem 2rem 4rem 2rem;
+  }
+}

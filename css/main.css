@@ -159,6 +159,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 12rem;
 }
 
 .prices__item {
@@ -248,7 +249,7 @@ body {
   font-weight: 700;
 }
 
-.ph-plus {
+.prices__icon {
   font-size: 3.3rem;
   -webkit-transition: -webkit-transform 0.5s ease-out;
   transition: -webkit-transform 0.5s ease-out;
@@ -601,6 +602,52 @@ body {
 .contacts__insta-logo {
   font-size: 1.5em;
   color: #fff;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+}
+
+.footer__link {
+  text-align: center;
+  padding: 4rem 2rem 2rem 2rem;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer__oferta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+}
+
+.footer__oferta-text {
+  text-decoration: none;
+  text-align: center;
+  color: #959595;
+  padding: 2rem 2rem 4rem 2rem;
 }
 
 .header {
