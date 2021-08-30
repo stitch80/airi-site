@@ -1,21 +1,11 @@
 .prices {
   &__accordion {
-    //   width: 90rem;
-    //   margin: 0 auto;
-
     display: flex;
     flex-direction: column;
-    //   gap: 24px;
   }
 
   &__item {
-    //   padding: 2rem 0;
     text-align: left;
-    // display: grid;
-    // grid-template-columns: auto 4rem;
-    // align-items: center;
-
-    //   border-bottom: 2px solid $color-grey;
     border-top: 2px solid $color-grey;
 
     &:last-child {
@@ -26,19 +16,10 @@
       color: $color-white;
     }
 
-    // &:active .ph-plus {
-    //   transform: rotate(45deg);
-    // }
-
     &:hover .prices__circle {
       background-color: $color-primary;
-      //   color: $color-white;
     }
   }
-
-  //   &__cross {
-  //     stroke: black;
-  //   }
 
   &__acc-button {
     display: grid;
@@ -60,11 +41,9 @@
   }
 
   &__circle {
-    // margin: 0 auto;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    // background-color: $color-primary;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +51,6 @@
 
   &__hidden-box {
     grid-column: 1;
-    // display: none;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-out;
@@ -87,7 +65,6 @@
       max-width: 100%;
       min-width: 100%;
       object-fit: cover;
-      // transform: translate(-50%, -50%);
     }
   }
 

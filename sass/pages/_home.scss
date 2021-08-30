@@ -26,5 +26,15 @@
 }
 
 .section-quotes {
-  height: 100vh;
+  // text-align: center;
+  background-color: $color-grey;
+}
+
+.section__contacts {
+  height: 95vh;
+  background-image: url("../img/__1.webp");
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

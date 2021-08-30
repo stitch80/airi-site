@@ -1,0 +1,38 @@
+.contacts {
+  &__box {
+    height: 55rem;
+    width: 76rem;
+    padding: 5rem 15rem 7rem 15rem;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  &__text {
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+  }
+
+  &__logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-black;
+    padding: 0.8rem;
+    border-radius: 50%;
+  }
+
+  &__insta-logo {
+    font-size: 1.5em;
+    color: $color-white;
+  }
+}

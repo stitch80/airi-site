@@ -15,11 +15,7 @@ topButton.addEventListener("click", function (e) {
   document.querySelector("header").scrollIntoView({ behavior: "smooth" });
 });
 
-const stickyButton = function (entries, observer) {
-  // entries.forEach(entry => {
-  //   console.log(entry);
-  //   nav.classList.toggle('sticky');
-  // });
+const stickyButton = function (entries) {
   const entry = entries[0];
   if (!entry.isIntersecting) {
     topButton.classList.remove("hidden");

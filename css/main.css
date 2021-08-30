@@ -473,6 +473,74 @@ body {
   width: 50%;
 }
 
+.quotes__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+  row-gap: 3rem;
+  padding-bottom: 7rem;
+}
+
+.quotes__card {
+  text-align: left;
+}
+
+.quotes__card--1, .quotes__card--2 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.quotes__card--3 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.quotes__card--3, .quotes__card--4 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.quotes__text-box {
+  background-color: #f1d069;
+  padding: 3.5rem;
+}
+
+.quotes__text {
+  line-height: 1.55;
+}
+
+.quotes__element {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-left: 3.5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 0 100%);
+  background-color: #f1d069;
+}
+
+.quotes__customer {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quotes__img {
+  height: 5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.quotes__name {
+  font-size: 1.4rem;
+}
+
 .ion-top-button {
   cursor: pointer;
   position: fixed;
@@ -480,15 +548,59 @@ body {
   left: 3rem;
   font-size: 6rem;
   color: #f1d069;
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
 }
 
 .hidden {
   display: none;
   visibility: hidden;
-  -webkit-transform: opacity(0);
-          transform: opacity(0);
+}
+
+.contacts__box {
+  height: 55rem;
+  width: 76rem;
+  padding: 5rem 15rem 7rem 15rem;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.contacts__text span {
+  font-weight: 700;
+}
+
+.contacts__link:link, .contacts__link:visited {
+  text-decoration: none;
+}
+
+.contacts__logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+
+.contacts__insta-logo {
+  font-size: 1.5em;
+  color: #fff;
 }
 
 .header {
@@ -676,6 +788,21 @@ body {
 }
 
 .section-quotes {
-  height: 100vh;
+  background-color: #f2f5f6;
+}
+
+.section__contacts {
+  height: 95vh;
+  background-image: url("../img/__1.webp");
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
