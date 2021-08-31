@@ -10,7 +10,6 @@
   }
 
   &__link {
-    // text-decoration: none;
     text-align: center;
     padding: 4rem 2rem 2rem 2rem;
     color: $color-black;
@@ -23,10 +22,62 @@
     justify-items: center;
   }
 
-  &__oferta-text {
-    text-decoration: none;
+  &__oferta-link {
+    cursor: pointer;
     text-align: center;
     color: $color-grey-dark;
     padding: 2rem 2rem 4rem 2rem;
   }
 }
+
+.footer-overlay {
+  position: fixed;
+  //   cursor: pointer;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-black, 0.5);
+  transition: transform 3s;
+  z-index: 5;
+  overflow-y: scroll;
+}
+
+.footer-popup {
+  //   cursor: default;
+  padding: 7rem 15rem;
+  z-index: 10;
+
+  &__text-box {
+    background-color: $color-white;
+    padding: 5rem;
+  }
+
+  &__header {
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.55;
+    height: 100%;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.footer-icon {
+  cursor: pointer;
+  position: fixed;
+  top: 2rem;
+  right: 4rem;
+  font-size: 5rem;
+  color: $color-white;
+}
+
+// ::-webkit-scrollbar {
+//   /* chrome based */
+//   width: 0px; /* ширина scrollbar'a */
+//   background: transparent; /* опционально */
+// }

@@ -7,15 +7,20 @@ const boxes = document.querySelectorAll(".prices__hidden-box");
 const icons = document.querySelectorAll(".ph-plus");
 const topButton = document.querySelector(".ion-top-button");
 const header = document.querySelector("header");
+const body = document.querySelector("body");
 
 const masters = document.querySelector(".section-masters");
 const prices = document.querySelector(".section-prices");
 const quotes = document.querySelector(".section-quotes");
 const contacts = document.querySelector(".section-contacts");
+const footerOverlay = document.querySelector(".footer-overlay");
+const footerPopup = document.querySelector(".footer-popup");
+const footerIcon = document.querySelector(".footer-icon");
 const linkMasters = document.querySelector(".footer__link--masters");
 const linkPrices = document.querySelector(".footer__link--prices");
 const linkQuotes = document.querySelector(".footer__link--quotes");
 const linkContacts = document.querySelector(".footer__link--contacts");
+const linkOferta = document.querySelector(".footer__oferta-link");
 
 ///////////////////////////////////////////
 // BUTTON TO TOP
@@ -86,4 +91,42 @@ linkQuotes.addEventListener("click", function () {
 });
 linkContacts.addEventListener("click", function () {
   contacts.scrollIntoView({ behavior: "smooth" });
+});
+
+// FOOTER POPUP
+linkOferta.addEventListener("click", function () {
+  footerPopup.classList.remove("hidden");
+  footerOverlay.classList.remove("hidden");
+  // document.body.style.overflowY = "hidden";
+  body.style.overflowY = "hidden";
+});
+
+const closePopup = function () {
+  footerPopup.classList.add("hidden");
+  footerOverlay.classList.add("hidden");
+  body.style.overflowY = null;
+};
+
+footerOverlay.addEventListener("click", function (e) {
+  if (e.target === footerPopup) {
+    closePopup();
+  }
+});
+
+footerIcon.addEventListener("click", function () {
+  closePopup();
+});
+
+footerOverlay.addEventListener("mouseover", function (e) {
+  // console.log(e.target);
+  if (e.target === footerPopup) {
+    footerOverlay.style.cursor = "pointer";
+  }
+});
+
+footerOverlay.addEventListener("mouseout", function (e) {
+  // console.log(e.target);
+  if (e.target === footerPopup) {
+    footerOverlay.style.cursor = null;
+  }
 });
