@@ -23,6 +23,16 @@ const linkContacts = document.querySelector(".footer__link--contacts");
 const linkOferta = document.querySelector(".footer__oferta-link");
 
 ///////////////////////////////////////////
+// ANIMATED LOGO
+
+const text = document.querySelector(".animated-logo__logo-text p");
+text.innerHTML = text.innerText
+  .split("")
+  .map(
+    (char, i) => `<span style='transform:rotate(${i * 8.4}deg)'>${char}</span>`
+  )
+  .join("");
+
 // BUTTON TO TOP
 
 topButton.addEventListener("click", function (e) {

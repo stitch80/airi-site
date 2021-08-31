@@ -74,6 +74,28 @@
   }
 }
 
+@-webkit-keyframes rotateText {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateText {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -261,6 +283,52 @@ body {
   transition: -webkit-transform 0.5s ease-out;
   transition: transform 0.5s ease-out;
   transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.animated-logo__logo-circle {
+  position: absolute;
+  top: 0.3rem;
+  left: 1.5rem;
+  height: 12.5rem;
+  width: 12.5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.animated-logo__logo-img {
+  position: absolute;
+  width: 8.2rem;
+  height: 8.2rem;
+  background-image: url(../img/Logo.png);
+  background-size: cover;
+  /* background-color: white; */
+  border-radius: 50%;
+  /* filter: brightness(1.5) contrast(1.5); */
+}
+
+.animated-logo__logo-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: monospace;
+  font-size: 1.4rem;
+  -webkit-animation: rotateText 10s linear infinite;
+          animation: rotateText 10s linear infinite;
+}
+
+.animated-logo__logo-text span {
+  position: absolute;
+  left: 50%;
+  -webkit-transform-origin: 0 6.25rem;
+          transform-origin: 0 6.25rem;
 }
 
 .feature-box {
@@ -663,6 +731,8 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   -webkit-transition: -webkit-transform 3s;
   transition: -webkit-transform 3s;
   transition: transform 3s;

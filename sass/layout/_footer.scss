@@ -38,6 +38,8 @@
   top: 0;
   left: 0;
   background-color: rgba($color-black, 0.5);
+  backdrop-filter: blur(3px);
+
   transition: transform 3s;
   z-index: 5;
   overflow-y: scroll;
