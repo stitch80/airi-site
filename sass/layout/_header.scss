@@ -17,25 +17,37 @@
       vertical-align: middle;
     }
 
-    &--2 {
-      &:link,
-      &:visited {
-        border-bottom: 0.2rem solid transparent;
-        transition: border-bottom 0.2s;
-        padding: 0.2rem 0;
-      }
+    // &--2 {
+    //   &:link,
+    //   &:visited {
+    //     border-bottom: 0.2rem solid transparent;
+    //     transition: border-bottom 0.2s;
+    //     padding: 0.2rem 0;
+    //   }
 
-      &:hover,
-      &:active {
-        border-bottom: 0.2rem solid $color-primary;
-        transition: border-bottom 0.2s;
-      }
-    }
+    //   &:hover,
+    //   &:active {
+    //     border-bottom: 0.2rem solid $color-primary;
+    //     transition: border-bottom 0.2s;
+    //   }
+    // }
   }
 
   &__navbar {
     margin: 2.5rem auto;
     grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__nav-link {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 4rem 2rem 2rem 2rem;
+    color: $color-black;
+    cursor: pointer;
   }
 
   &__list {

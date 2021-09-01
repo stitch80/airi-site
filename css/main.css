@@ -175,8 +175,13 @@ body {
 
 .hidden {
   display: none;
-  -webkit-transform: scale(0.15) translateY(20rem);
-          transform: scale(0.15) translateY(20rem);
+  -webkit-transform: scale(0.15);
+          transform: scale(0.15);
+  opacity: 0;
+}
+
+.active {
+  visibility: visible !important;
 }
 
 .prices__accordion {
@@ -318,7 +323,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-family: monospace;
+  font-family: "Fira Mono", monospace;
   font-size: 1.4rem;
   -webkit-animation: rotateText 10s linear infinite;
           animation: rotateText 10s linear infinite;
@@ -546,6 +551,125 @@ body {
   font-weight: 700;
   padding: 1.7rem 2rem;
   width: 50%;
+}
+
+.popup {
+  height: 100vh;
+  background-color: #fff;
+  padding: 5rem 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.popup__carousel {
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.popup__carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  z-index: 20;
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.popup__carousel-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.popup__carousel-control {
+  font-size: 5rem;
+  z-index: 30;
+  color: #000;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 15rem;
+}
+
+.popup__carousel-control:hover {
+  color: #959595;
+}
+
+.popup__carousel-control--back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  left: 2rem;
+}
+
+.popup__carousel-control--forward {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  right: 2rem;
+}
+
+.popup__carousel-control--close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  right: 0rem;
+  top: -5rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.setLeft {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.setRight {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .quotes__box {
@@ -799,23 +923,26 @@ body {
   vertical-align: middle;
 }
 
-.header__link--2:link, .header__link--2:visited {
-  border-bottom: 0.2rem solid transparent;
-  -webkit-transition: border-bottom 0.2s;
-  transition: border-bottom 0.2s;
-  padding: 0.2rem 0;
-}
-
-.header__link--2:hover, .header__link--2:active {
-  border-bottom: 0.2rem solid #f1d069;
-  -webkit-transition: border-bottom 0.2s;
-  transition: border-bottom 0.2s;
-}
-
 .header__navbar {
   margin: 2.5rem auto;
   -ms-grid-row: 2;
   grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.header__nav-link {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 4rem 2rem 2rem 2rem;
+  color: #000;
+  cursor: pointer;
 }
 
 .header__list {
@@ -962,7 +1089,7 @@ body {
   background-color: #f2f5f6;
 }
 
-.section__contacts {
+.section-contacts {
   height: 95vh;
   background-image: url("../img/__1.webp");
   background-size: contain;
