@@ -4,3 +4,65 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// 1em = 16px
+
+// ORDER: Base + typography > general layout + grid > page layout > components
+
+// MEDIA QUERIES
+
+@mixin respond($breakpoint) {
+  //  370px
+  @if $breakpoint == phone-small {
+    @media only screen and (max-width: 23.125em) {
+      @content;
+    }
+  }
+
+  //  600px
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  // 900px
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  // 1200px
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  // //1400 and dpi < 100
+  // @if $breakpoint == small-desktop {
+  //   @media only screen and (max-width: 87.5em) and (max-resolution: 100ppi) {
+  //     @content;
+  //   }
+  // }
+
+  // 1400px
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 87.5em) {
+      @content;
+    }
+  }
+
+  // 1800px
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+
+  // 2400px
+  @if $breakpoint == huge-desktop {
+    @media only screen and (min-width: 150em) {
+      @content;
+    }
+  }
+}

@@ -7,7 +7,13 @@
   padding-bottom: 8rem;
 
   &__card {
-    display: grid;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+    // grid-template-rows: 4fr 1fr 4fr 1fr;
+    // align-content: center;
+    // justify-content: center;
+
     &--1 {
       grid-column: 1 / span 2;
 
@@ -35,18 +41,24 @@
     }
   }
 
+  &__heading {
+    // flex: 0 0 5%;
+  }
+
   &__img-box {
-    height: 38rem;
-    width: 38rem;
+    // height: 38rem;
+    // width: 38rem;
+    // flex: content;
+    aspect-ratio: 1;
 
     overflow: hidden;
     position: relative;
     margin-bottom: 1rem;
-    &::after {
-      display: block;
-      content: "";
-      padding-top: 100%;
-    }
+    // &::after {
+    //   display: block;
+    //   content: "";
+    //   padding-top: 100%;
+    // }
   }
 
   &__img {
@@ -74,6 +86,11 @@
   &__text {
     height: 20rem;
     font-style: italic;
+
+    // align-content: flex-start;
+    @include respond(tab-land) {
+      font-size: 1.4rem;
+    }
   }
 
   &__link {
@@ -84,10 +101,21 @@
       text-decoration: none;
       color: $color-white;
       background-color: $color-primary;
-      font-size: 80%;
+
       font-weight: 700;
       padding: 1.7rem 2rem;
       width: 50%;
+      // font-size: 80%;
+      font-size: 1.5rem;
+      @include respond(desktop) {
+        font-size: 1.42rem;
+      }
+      @include respond(tab-land) {
+        width: 70%;
+      }
+      // @include respond(small-desktop) {
+      //   font-size: 1.26rem;
+      // }
     }
   }
 }

@@ -8,7 +8,8 @@ const icons = document.querySelectorAll(".ph-plus");
 const topButton = document.querySelector(".ion-top-button");
 const header = document.querySelector("header");
 const body = document.querySelector("body");
-const photos = document.querySelectorAll(".photos__item");
+// const photos = document.querySelectorAll(".photos__item");
+const photos = document.querySelectorAll(".photos__box");
 const carouselItems = document.querySelectorAll(".popup__carousel-item");
 const popup = document.querySelector(".popup");
 
@@ -92,7 +93,8 @@ boxes.forEach((b) =>
     const accBtn = e.target
       .closest(".prices__item")
       .querySelector(".prices__acc-button");
-    if (accBtn === curButton) accBtn.scrollIntoView({ behavior: "smooth" });
+    // if (accBtn === curButton) accBtn.scrollIntoView({ behavior: "smooth" });
+    if (accBtn === curButton) curButton.scrollIntoView({ behavior: "smooth" });
   })
 );
 
@@ -170,7 +172,8 @@ photos.forEach((p) =>
   p.addEventListener("click", function (e) {
     popup.classList.remove("hidden");
     curPhoto = e.target.dataset.photo;
-    initState(Number.parseInt(curPhoto));
+    // initState(Number.parseInt(curPhoto));
+    initState(+curPhoto);
     body.style.overflowY = "hidden";
   })
 );
@@ -197,9 +200,11 @@ controlBack.addEventListener("click", function () {
     ci.classList.remove("setLeft");
     ci.classList.remove("setRight");
   });
-  curPhoto = Number.parseInt(curPhoto) === 1 ? 8 : curPhoto - 1;
-  console.log(curPhoto);
-  initState(Number.parseInt(curPhoto));
+  // curPhoto = Number.parseInt(curPhoto) === 1 ? 8 : curPhoto - 1;
+  curPhoto = +curPhoto === 1 ? 8 : curPhoto - 1;
+  // console.log(curPhoto);
+  // initState(Number.parseInt(curPhoto));
+  initState(+curPhoto);
 });
 
 const controlForward = document.querySelector(
@@ -211,10 +216,11 @@ controlForward.addEventListener("click", function () {
     ci.classList.remove("setLeft");
     ci.classList.remove("setRight");
   });
-  curPhoto =
-    Number.parseInt(curPhoto) === 8 ? 1 : Number.parseInt(curPhoto) + 1;
+  // curPhoto = Number.parseInt(curPhoto) === 8 ? 1 : Number.parseInt(curPhoto) + 1;
+  curPhoto = +curPhoto === 8 ? 1 : +curPhoto + 1;
   console.log(curPhoto);
-  initState(Number.parseInt(curPhoto));
+  // initState(Number.parseInt(curPhoto));
+  initState(+curPhoto);
 });
 
 const controlClose = document.querySelector(".popup__carousel-control--close");

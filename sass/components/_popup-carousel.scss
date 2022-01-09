@@ -33,6 +33,7 @@
       // visibility: hidden;
       z-index: 20;
       transition: all 1s $animation-template;
+      // transition: all 1s;
     }
 
     &-img {
@@ -57,9 +58,12 @@
       height: 100%;
       width: 15rem;
 
-      &:hover {
-        color: $color-grey-dark;
+      @media (hover: hover) {
+        &:hover {
+          color: $color-grey-dark;
+        }
       }
+
       &--back {
         display: flex;
         align-items: center;
@@ -89,11 +93,11 @@
 }
 
 .setLeft {
-  transform: translateX(-100%);
+  transform: translateX(-120%);
   // visibility: visible;
 }
 
 .setRight {
-  transform: translateX(100%);
+  transform: translateX(120%);
   // visibility: visible;
 }
