@@ -4,8 +4,16 @@
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
+  @include respond(phone) {
+    font-size: 2rem;
+  }
   &__nav {
     display: flex;
+    @include respond(phone) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 12rem;
+    }
     justify-items: center;
   }
 

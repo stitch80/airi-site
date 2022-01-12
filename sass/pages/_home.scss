@@ -2,6 +2,9 @@
   text-align: center;
   background-color: $color-grey;
   padding-top: 5rem;
+  @include respond(tab-port) {
+    padding-top: 10rem !important;
+  }
   padding-bottom: 7rem;
 }
 
@@ -29,6 +32,20 @@
 
 .section-prices {
   text-align: center;
+  @include respond(tab-port-big) {
+    padding-left: 25rem !important;
+    padding-right: 25rem !important;
+  }
+
+  @include respond(tab-port) {
+    padding-left: 15rem !important;
+    padding-right: 15rem !important;
+  }
+
+  @include respond(phone) {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
 }
 
 .section-quotes {
@@ -40,6 +57,27 @@
   height: 95vh;
   background-image: url("../img/__1.webp");
   background-size: contain;
+  @include respond(tab-port-big) {
+    background-size: cover;
+    height: 50vh;
+    justify-content: flex-end;
+    padding-right: 15rem;
+  }
+
+  @include respond(tab-port) {
+    background-size: cover;
+    height: 50rem;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  @include respond(phone-small) {
+    background-size: cover;
+    height: 60rem;
+    justify-content: center;
+    padding-right: 0;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;

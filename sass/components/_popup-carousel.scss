@@ -29,6 +29,10 @@
       top: 0;
       left: 10%;
       width: 80%;
+      @include respond(phone-small) {
+        left: 15%;
+        width: 70%;
+      }
       // display: none;
       // visibility: hidden;
       z-index: 20;

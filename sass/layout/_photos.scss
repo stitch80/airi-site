@@ -41,6 +41,9 @@
 .photos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  @include respond(phone) {
+    grid-template-columns: 1fr 1fr;
+  }
   // column-gap: 5rem;
   // row-gap: 5rem;
   // grid-template-rows: 1fr 1fr;

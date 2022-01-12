@@ -1,7 +1,13 @@
 .header {
   height: 100vh;
+  @include respond(tab-port-big) {
+    height: auto;
+  }
   display: grid;
   grid-template-rows: 15% 10% auto;
+  @include respond(tab-port) {
+    grid-template-rows: auto auto auto;
+  }
 
   &__title {
     border-bottom: 2px solid $color-primary;
@@ -37,6 +43,9 @@
     margin: 2.5rem auto;
     grid-row: 2;
     display: flex;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
     align-items: center;
     justify-items: center;
   }
@@ -46,6 +55,10 @@
     font-size: 1.6rem;
     font-weight: 400;
     padding: 4rem 2rem 2rem 2rem;
+    @include respond(tab-port) {
+      padding: 1rem 2rem;
+      font-size: 2.2rem;
+    }
     color: $color-black;
     cursor: pointer;
   }
@@ -62,16 +75,32 @@
 
   &__descblock {
     grid-row: 3;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include respond(tab-port) {
+      grid-template-rows: 1fr 4fr;
+      grid-template-columns: none;
+      padding: 0;
+    }
+
+    @include respond(phone) {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: none;
+      padding: 0;
+    }
     padding: 2.5rem 0;
   }
 
   &__description {
-    flex: 0 0 50%;
+    // flex: 0 0 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 5rem;
+    @include respond(tab-port) {
+      margin-right: 0;
+      font-size: 2.6rem;
+    }
   }
 
   &__line {
@@ -82,7 +111,8 @@
   }
 
   &__imgbox {
-    flex: 1;
+    // flex: 1;
+    // aspect-ratio: 1;
 
     overflow: hidden;
     position: relative;
@@ -94,6 +124,18 @@
     @include centerItem;
     width: 100%;
     height: auto;
+    @include respond(tab-port) {
+      height: 100%;
+      width: auto;
+    }
+    @include respond(phone) {
+      height: auto;
+      width: 100%;
+    }
+    @include respond(phone-small) {
+      height: 100%;
+      width: auto;
+    }
     animation: itemAppear 1.7s $animation-template backwards;
   }
 }

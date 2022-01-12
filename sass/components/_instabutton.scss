@@ -9,7 +9,13 @@
 
       text-decoration: none;
       color: $color-white;
-      font-size: 80%;
+      font-size: 1.3rem;
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
+      @include respond(phone-small) {
+        font-size: 1.6rem;
+      }
       font-weight: 700;
       padding: 2rem 6rem;
       transition: all 0.4s;

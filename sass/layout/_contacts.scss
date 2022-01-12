@@ -3,6 +3,32 @@
     height: 55rem;
     width: 76rem;
     padding: 5rem 15rem 7rem 15rem;
+    @include respond(tab-port-big) {
+      height: 50rem;
+      width: 66rem;
+      padding: 3rem 10rem 5rem 10rem;
+    }
+
+    @include respond(tab-port) {
+      height: 45rem;
+      width: 56rem;
+      padding: 1rem 5rem 3rem 5rem;
+    }
+
+    @include respond(phone) {
+      height: 40rem;
+      width: 46rem;
+      padding: 1rem 2rem 3rem 2rem;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    @include respond(phone-small) {
+      height: 50rem;
+      width: 40rem;
+      padding: 1rem 2rem 3rem 2rem;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
     background-color: $color-white;
     display: flex;
     flex-direction: column;
