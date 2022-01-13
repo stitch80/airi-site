@@ -78,35 +78,37 @@
 
   &__img {
     @include centerItem;
-    max-width: 130%;
-    max-height: 130%;
+    // max-width: 130%;
+    // max-height: 130%;
+    max-width: 100%;
+    max-height: 100%;
   }
 
-  &__card--1 &__img-box &__img {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-  &__card--2 &__img-box &__img {
-    transform: translate(-50%, -50%) scale(0.8);
-    @include respond(big-desktop) {
-      transform: translate(-50%, -50%) scale(0.95);
-    }
-    @include respond(huge-desktop) {
-      transform: translate(-50%, -50%) scale(1.25);
-    }
-  }
-  &__card--3 &__img-box &__img {
-    transform: translate(-50%, -50%) scale(0.8);
+  // &__card--1 &__img-box &__img {
+  //   transform: translate(-50%, -50%) scale(1);
+  // }
+  // &__card--2 &__img-box &__img {
+  //   transform: translate(-50%, -50%) scale(1);
+  //   // @include respond(big-desktop) {
+  //   //   transform: translate(-50%, -50%) scale(1);
+  //   // }
+  //   // @include respond(huge-desktop) {
+  //   //   transform: translate(-50%, -50%) scale(1);
+  //   // }
+  // }
+  // &__card--3 &__img-box &__img {
+  //   transform: translate(-50%, -50%) scale(1);
 
-    @include respond(huge-desktop) {
-      transform: translate(-50%, -50%) scale(0.95);
-    }
-  }
-  &__card--4 &__img-box &__img {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-  &__card--5 &__img-box &__img {
-    transform: translate(-50%, -50%) scale(1);
-  }
+  //   // @include respond(huge-desktop) {
+  //   //   transform: translate(-50%, -50%) scale(1);
+  //   // }
+  // }
+  // &__card--4 &__img-box &__img {
+  //   transform: translate(-50%, -50%) scale(1);
+  // }
+  // &__card--5 &__img-box &__img {
+  //   transform: translate(-50%, -50%) scale(1);
+  // }
 
   &__text {
     height: 20rem;
